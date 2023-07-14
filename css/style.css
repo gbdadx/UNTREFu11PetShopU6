@@ -1,0 +1,541 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format('ttf');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:checked,
+a:link,
+a:visited {
+    color: white;
+}
+
+/*navs negras(antes del header y despues del footer*/
+.navBlack {
+    background-color: black;
+    color: #fff;
+    padding: .9375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navUp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+select {
+    background-color: black;
+    color: #fff;
+    border-style: none;
+}
+
+/*                   HEADE3R                                */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0a83e;
+    color: white;
+    margin-bottom: .625rem;
+    width: 100%;
+    line-height: 3rem;
+}
+
+#inicioHeader {
+    display: flex;
+    background-color: #f0a83e;
+
+}
+
+.logoHeader {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    width: 50%;
+    padding-top: .9375rem;
+
+}
+
+#logo {
+    width: 18.75rem;
+    padding: 0px 1.25rem;
+}
+
+.categoriasHeader {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 50%;
+    color: white;
+}
+
+.iconoPatitaChico {
+    color: #fff;
+    width: 1rem;
+}
+
+#finalHeader {
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 27.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fbh1 {
+    width: 50%;
+}
+
+.fhb2 {
+    color: black;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1.875rem;
+    text-decoration: none;
+    width: 50%;
+}
+
+h1 {
+    padding: .9375rem;
+    font-size: x-large;
+    background-color: #fff;
+    border-radius: .3125rem;
+}
+
+.fhb2 p {
+    font-size: larger;
+}
+
+.fhb2 button {
+    font-size: 1rem;
+    padding: .9375rem;
+    border-radius: .3125rem;
+    background-color: #f0a83e;
+    color: #fff;
+    border: none;
+}
+
+/*                    MAIN                                 */
+
+main {
+    margin-top: .625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main section {
+    margin-top: 1.25rem;
+
+}
+
+#destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#pawMain {
+    width: 6.25rem;
+
+}
+
+.destaca2H2 {
+    font-size: 3rem;
+}
+
+.destaca2Sp span {
+    font-size: 1.3rem;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+/*galeria*/
+#galeria {
+    display: flex;
+    justify-content: center;
+}
+
+.card,
+.cardbody,
+.cardFooter {
+    background-color: #fbf9f5;
+    width: 21.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.25rem .625rem;
+}
+
+.cardbody img {
+    width: 9.375rem;
+}
+
+.cardbody {
+    height: 70%;
+    width: 100%;
+}
+
+.cardFooter {
+    height: 30%;
+    width: 100%;
+}
+
+/*  formulario  */
+/* floating labels con css
+https://dev.to/web2feel/html-css-form-with-floating-labels-2o0i  */
+
+form {
+    width: 40vw;
+    max-width: 48rem;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: .3125rem;
+}
+
+#h2form {
+    text-align: center;
+    font-size: 2rem;
+}
+
+label {
+    margin-bottom: .9375rem;
+    position: relative;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: .625rem;
+    margin-top: 1.25rem;
+    outline: none;
+    border-radius: .9375rem;
+    background-color: #3C2313;
+    height: 2.5rem;
+    color: #fff
+}
+
+input::placeholder {
+    opacity: 1;
+    padding: 1rem;
+}
+
+.spanF {
+    position: absolute;
+    top: 0;
+    left: .625rem;
+    ;
+    transform: translateY(1.875rem);
+    font-size: 0.825em;
+    transition-duration: 300ms;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#reset {
+    width: 7.5rem;
+    padding: .9375rem .9375rem;
+    margin-top: 1.25rem;
+    margin-right: .9375rem;
+    background: #8a8787;
+    color: #fff;
+    border: .0625rem solid #8a8787;
+    cursor: pointer;
+    border-radius: .9375rem;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+#submit {
+    width: 7.5rem;
+    padding: .9375rem .9375rem;
+    margin-top: 1.25rem;
+    background: #f0a83e;
+    color: #fff;
+    border: .0625rem solid #f0a83e;
+    cursor: pointer;
+    border-radius: .9375rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+label:focus-within>.spanF,
+input:not(:placeholder-shown)+.spanF {
+    color: #f0a83e;
+    transform: translateY(0px);
+}
+
+/* fin del formulario  */
+/*                FOOTER                          */
+#sectionPreFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.buscador {
+    background-color: #f0a83e;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.divh2 {
+    display: flex;
+    flex-direction: row;
+    width: 48%;
+}
+
+.inputSearch {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-bottom: .9375rem;
+}
+
+#imgDivh2 {
+    width: 3.125rem;
+    height: 3.125rem;
+    margin-right: 1.25rem;
+    align-self: center;
+}
+
+#realh2 {
+    align-self: center;
+}
+
+.prefooter {
+    background: #3C2313;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.contacto {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+}
+
+.logoMarca {
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.logoMarca img {
+    width: 15rem;
+}
+
+#subscribete {
+    background: #fff;
+    border: .0625rem solid#fff;
+    border-radius: .9375rem;
+    width: 25rem;
+    margin-right: .625rem;
+    height: 3rem;
+}
+
+#subscribirme {
+    background-color: #3c2313;
+    border-radius: .9375rem;
+    padding: .9375rem;
+    border: solid .0625rem #3c2313;
+    color: #fff;
+    align-self: flex-end;
+
+
+}
+
+.imgPreFooter {
+    width: 3.125rem;
+
+}
+
+.divIMg {
+    padding: 1.25rem;
+    color: #fff;
+}
+
+.divIMg img {
+    color: #fff;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*** breakpoints rem responsive  */
+/*Pantallas grandes*/
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+/* laptops y desktops */
+
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/*tablets mas grandes y pequeñas laptops*/
+
+
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/*Tabletas */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/*Celulares */
+
+@media (max-width: 450px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+/*celulares chicos*/
+
+@media (max-width: 300px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+/* mediaqueries convencionales */
+
+@media (max-width: 900px) {
+    #galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 758px) {
+
+    .navBlack,
+    #inicioHeader,
+    #finalHeader,
+    .buscador,
+    .prefooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .divh2,
+    .inputSearch {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navBlack {
+        text-align: center;
+    }
+
+    select {
+        font-size: smaller;
+    }
+
+    .finalHeaderBox {
+        width: 100%;
+        align-items: center;
+        justify-content: stretch;
+    }
+
+    .categoriasHeader,
+    .logoHeader {
+        display: flex;
+        flex-direction: row;
+        font-size: smaller;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    #destacados,
+    #galeria,
+    .register,
+    form, label, input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+   
+
+
+}

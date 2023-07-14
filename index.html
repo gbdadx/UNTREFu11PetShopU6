@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="shortcut icon" href="./img/pawprint1.svg" style="color:#f0a83e;" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navBlack navUp">
+        <span class="navUpleft">
+            <h5>Grandes ofertas en comederos</h5>
+        </span>
+        <span class="navUpRight">
+            <select name="idioma" id="idioma">
+                <option value="Español">Español</option>
+                <option value="English">English</option>
+
+            </select>
+            <select name="moneda" id="moneda">
+                <option value="peso">AR$</option>
+                <option value="dolar">US$</option>
+
+            </select>
+        </span>
+
+    </nav>
+
+    <header id="header">
+        <div id="inicioHeader">
+            <div class="logoHeader">
+                <div>
+                    <img src="./img/Logo.svg" id="logo" alt="logo">
+                </div>
+            </div>
+            <div class="categoriasHeader">
+
+                <p> <a href="#"><img src="./img/pawprint4.svg" class="iconoPatitaChico" alt="iconoPatitaChico">Categorias</a>
+                </p>
+                <p> <a href="#"> <img src="./img/pawprint4.svg" class="iconoPatitaChico" alt="iconoPatitaChico"> Pets</a> 
+                </p>
+                <p> <a href="#"> <img src="./img/pawprint4.svg" class="iconoPatitaChico" alt="iconoPatitaChico"> Nosotros</a>
+                </p>
+                <p> <a href="#"> <img src="./img/pawprint4.svg" class="iconoPatitaChico" alt="iconoPatitaChico"> Contactanos</a>
+                </p>
+
+            </div>
+        </div>
+
+        <div id="finalHeader">
+
+            <div class="finalHeaderBox fhb1">
+
+            </div>
+            <div class="finalHeaderBox fhb2">
+                <h1>¡Es un placer tenerte aquí!</h1>
+                <p>¡Comederos en descuento!</p>
+                <button> COMEDEROS</button>
+            </div>
+        </div>
+    </header>
+    <!--      main      -->
+    <main id="main">
+        <section id="destacados" class="slide">
+            <div class="destaca2Img"><img src="./img/pawprint1.svg" id="pawMain" alt="paw"></div>
+            <H2 class="destaca2H2">Productos Destacados</H2>
+            <div class="destaca2Sp"><span>Comederos</span><span>Accesorios</span><span>Comida</span>
+            </div>
+        </section>
+        <section id="galeria">
+            <div class="card">
+                <div class="cardBody">
+                    <img src="./img/churrasquito.png" alt="churrasquito">
+                </div>
+                <div class="cardFooter">
+                    <h4>Juguete churrasquito</h4>
+                    <p>Precio: $150</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardBody">
+                    <img src="./img/comedero.png" alt="comedero">
+                </div>
+                <div class="cardFooter">
+                    <h4>Comedero para perro</h4>
+                    <p>Precio: $250</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardBody">
+                    <img src="./img/Huesito.png" alt="huesto">
+                </div>
+                <div class="cardFooter">
+                    <h4>Juguete Huesito</h4>
+                    <p>Precio: $650</p>
+                </div>
+            </div>
+
+
+
+
+        </section>
+        <section class="register">
+
+            <form>
+                <h2 id="h2form">Contactanos</h2>
+                <label for="name">
+                    <input type="text" id="name" placeholder="Name">
+                    <span class="spanF">Nombre y apellido</span>
+                </label>
+                <label for="email">
+                    <input type="email" id="email" placeholder="Email">
+                    <span class="spanF">Ingresa tu correo electronico</span>
+                </label>
+                <label for="phone">
+                    <input type="text" id="phone" placeholder="Phone">
+                    <span class="spanF">Telefono</span>
+                </label>
+                <div class="buttons">
+                    <button type="reset" id="reset">Resetear</button>
+                    <button type="submit" id="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer id="sectionPreFooter">
+        <div class="buscador">
+            <div class="divh2">
+                <img src="./img/enviar-correo.png" alt="enviar-correo" id="imgDivh2" placeholder="Ingresá tu correo electronico">
+                <h2 id="realh2">Subscribete para mas novedades</h2>
+            </div>
+            <div class="inputSearch"><input type="search" name="subscribete" id="subscribete"
+                    placeholder="Ingresa tu correo electonico">
+                <button id="subscribirme">Subscribirme</button>
+            </div>
+        </div>
+        <div class="prefooter">
+
+            <div class="contacto">
+                <div class="item">
+                    <div class="divIMg">
+                        <img src="./img/IconoLocation.png" alt="localidad" class="imgPreFooter">
+                    </div>
+                    <div class="contenido">
+                        <h2>Localidad</h2>
+                        <p>Calle - Provincia</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="divIMg">
+                        <img src="./img/IconoTelefono.png" alt="telefono" class="imgPreFooter">
+                    </div>
+                    <div class="contenido">
+                        <h2>Telefono</h2>
+                        <p>Calle - Provincia</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="divIMg">
+                        <img src="./img/Icono.png" alt="correoE" class="imgPreFooter">
+                    </div>
+                    <div class="contenido">
+                        <h2>Correo electronico</h2>
+                        <p>Direccion de correo</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="logoMarca">
+                <a href="#header"><img src="./img/LogoCatDog.png" alt="logo"></a>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--    footer   -->
+    <nav class="navBlack">
+        <h4>Todos los derechos reservados Argentina Programa @UNTREF</h4>
+    </nav>
+
+</body>
+
+</html>
