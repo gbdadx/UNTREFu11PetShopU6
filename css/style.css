@@ -146,6 +146,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
 }
 
@@ -182,6 +183,7 @@ main section {
 #galeria {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .card,
@@ -192,7 +194,7 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.25rem .625rem;
+    margin: 0.65rem .4rem;
 }
 
 .cardbody img {
@@ -212,11 +214,15 @@ main section {
 /*  formulario  */
 /* floating labels con css
 https://dev.to/web2feel/html-css-form-with-floating-labels-2o0i  */
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 form {
-    width: 40vw;
-    max-width: 48rem;
-    padding: 3vw;
+    width: 70%;
     display: flex;
     flex-direction: column;
     border-radius: .3125rem;
@@ -242,6 +248,10 @@ input {
     background-color: #3C2313;
     height: 2.5rem;
     color: #fff
+}
+
+::placeholder {
+    visibility: hidden;
 }
 
 input::placeholder {
@@ -483,6 +493,14 @@ input:not(:placeholder-shown)+.spanF {
         justify-content: center;
         align-items: center;
         width: 100%;
+        row-gap: 1rem;
+        padding:1rem;
+    }
+    .prefooter{
+        row-gap: 1rem;
+    }
+    .logoMarca{
+        align-items: center;
     }
 
     .divh2,
@@ -515,27 +533,44 @@ input:not(:placeholder-shown)+.spanF {
         justify-content: space-around;
         align-items: center;
     }
-
+footer .logoMarca{
+    justify-content: center;
+  align-items: center;
+}
     section {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         width: 100%;
+        padding-bottom: 0.5rem;
 
     }
 
     #destacados,
     #galeria,
-    .register,
-    form, label, input {
+    .register {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
 
-   
+    form {
+        width: 80%;
+    }
 
+    label,
+    input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
+}
+@media (max-width: 450px) {
+    .destaca2H2 {
+        font-size:2.3rem;
+    }
 }
